@@ -9,10 +9,9 @@ interface PostPageProps {
   params: {
     slug: string;
   };
-  postId:string
 }
 
-export default async function PostPage({ params,postId }: PostPageProps) {
+export default async function PostPage({ params }: PostPageProps) {
   const { slug } = params;
 
   const getPostContent = async () => {
